@@ -1,0 +1,33 @@
+codecov:
+  branch: master
+  token: 033b3832-ffc1-4ae6-90d2-ac2302c6b9cc
+
+coverage:
+  precision: 2
+  round: down
+  range: "50...80"
+
+  status:
+    project:
+      default: true
+      new_code: # New code
+        paths:
+          - !public
+          - src/
+          - !node_modules
+          - !build
+          - !config
+          - !scripts
+
+    patch:
+      default:
+        target: auto
+        set_pending: yes
+        base: auto
+        if_no_uploads: success
+        if_not_found: success
+        if_ci_failed: error
+
+comment:
+  layout: "header, diff, tree"
+  behavior: default

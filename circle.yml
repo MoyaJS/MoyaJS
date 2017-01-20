@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 6.9.4
+  timezone:
+    America/Los_Angeles
+
+dependencies:
+  pre:
+    - npm config set loglevel warn && npm install -g --depth 0 --silent codecov l10ns bower gulp mocha karma karma-cli
+  override:
+    - npm install
+  cache_directories:
+    - "/opt/circleci/nodejs/v6.9.4/lib" # cache global modules (npm list -g)
+    - "node_modules" # cache local node modules
+
+test:
+  post:
+    - bash <(curl -s https://codecov.io/bash)
