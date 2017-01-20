@@ -1,7 +1,7 @@
 # MoyaJS
 Network abstraction layer written in Javascript.
 
-[![CircleCI](https://circleci.com/gh/MoyaJS/MoyaJS/tree/master.svg?style=svg)](https://circleci.com/gh/MoyaJS/MoyaJS/tree/master)
+[![CircleCI](https://circleci.com/gh/MoyaJS/MoyaJS.svg?style=shield)](https://circleci.com/gh/MoyaJS/MoyaJS)
 [![codecov.io](https://codecov.io/github/MoyaJS/MoyaJS/coverage.svg?branch=master)](https://codecov.io/github/MoyaJS/MoyaJS?branch=master)
 
 <p align="center">
